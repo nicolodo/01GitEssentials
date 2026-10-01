@@ -1,0 +1,92 @@
+
+
+* {
+  /* background-color: blue; */
+}
+
+body{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 10px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+/*
+  static positioning: is just put the elem where it is in the html
+
+  absolute positioning positions an element relative to its nearest
+    ancestor elem with the relative position tag.
+  relative: in addition to the above lets you position rel to its parent elem
+  
+  fixed: locks it in place rel to the viewport and 
+  sticky: locks it in place rel to the viewport AFTER you scroll past it*/
+
+.image-container {
+  background: #eee;
+  /* width: 300px; */
+  /* height: 300px; */
+  position: relative;
+}
+
+h2 {
+  background-color: aquamarine;
+  color: blue;
+  font-size: large;
+  padding: 30px;
+  margin: 0px;
+
+  position:absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.cookie-notice {
+  background: #3b38f4;
+  padding: 30px;
+
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 10px;
+  top: 80%;
+
+}
+
+.container{
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  
+  /* text */
+  color: black;
+  font-weight: bold;
+}
+
+.container .logo {
+  margin: 0;
+}
+
+/* .container * {
+  flex: 1 1 0;
+} */
+
+.container .links {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.container .links {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
