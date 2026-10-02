@@ -64,8 +64,38 @@ body.appendChild(list);
 
 // -------- Events ------------
 
+const button = document.querySelector("button");
+console.log(button.textContent);
+button.addEventListener("pointerup", function (event) {
+  button.textContent = "You went moue up!?"
+  console.log(event);
+});
 
+button.addEventListener("click", function (event) {
+  button.textContent = "clicck?"
+  console.log(event);
+});
 
+button.addEventListener("pointerdown", function (event) {
+  button.textContent = "You went moue down!?"
+  // console.log(event);
+  console.log(event.key);
+});
+
+body.addEventListener("keydown", (event) => {
+  console.log(event)
+  h1.textContent = event.code;
+  if (event.code.slice(0,4) == "KeyE"){
+    body.style.backgroundColor = "blue";
+  }
+  if (event.code.slice(0,4) == "KeyF"){
+    body.style.backgroundColor = "#0ee43c";
+  }
+  if (event.key == "g"){
+    body.style.backgroundColor = "#47c5ff";
+  }
+
+ })
 
 
 
